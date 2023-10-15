@@ -1,0 +1,20 @@
+圖片放在 public/portfolio 內
+設定檔在 src/Config.js
+
+先把圖片放進去 public/portfolio 內 再用 thumb.bat 產生縮圖
+之後再到 Config.js 內 做設定
+因為設定檔內要填入一些圖片的參數 圖太多不想一個一個弄得話可以用 config.bat 它會列出全部圖片的寬和高 只要改 minWidth 後貼到 Config.js 就好
+
+編輯
+如果想邊修改邊看效果的話用這個 存檔的時候就會自動套用到網頁上 不用重開這個bat(網頁還是重新整理一下比較好)
+執行 dev.bat 後
+在瀏覽器打開 http://localhost:5173/ 就可以看到了
+
+打包
+執行 build.bat 後
+資料夾內會多出一個 dist 資料夾 那個就是最終成品了 把那個交給老爸應該就可以了
+
+預覽打包結果
+如果在給老爸之前想再確認有沒有哪裏怪怪的話
+執行 preview.bat 後
+在瀏覽器打開 http://127.0.0.1:4173/

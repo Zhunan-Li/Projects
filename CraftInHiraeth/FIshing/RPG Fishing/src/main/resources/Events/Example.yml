@@ -1,0 +1,13 @@
+Type: "spawn_mobs"
+Mob_Name: "example"
+Difficult_min: 2
+Difficult_max: 5
+PullTimes_min: 3
+PullTimes_max: 5
+Xp_min: 10
+Xp_max: 30
+Chance_min: 1
+Chance_max: 5
+Level_min: 0
+Level_max: 10
+Region: none

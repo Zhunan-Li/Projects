@@ -1,0 +1,40 @@
+.eagle-save-board-progress-bar {
+	z-index: 2147483647 !important;
+	position: fixed !important;
+	left: 50% !important;
+	bottom: 30px !important;
+	transform: translateX(-50%) !important;
+	border-radius: 8px !important;
+	background-color: #0072EF !important;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1) !important;
+	display: flex !important;
+	align-items: flex-start !important;
+	padding: 0 20px !important;
+	height: 44px !important;
+	align-items: center !important;
+	font-size: 13px !important;
+	font-family: "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, Arial, sans-serif !important;
+}
+
+.eagle-save-board-progress-bar .eagle-save-board-progress-bar-icon {
+	width: 16px !important;
+	height: 16px !important;
+	display: flex !important;
+	margin-right: 12px !important;
+}
+
+.eagle-save-board-progress-bar .eagle-save-board-progress-bar-message {
+	flex: 1 !important;
+	font-weight: 600 !important;
+	min-width: 100px !important;
+	color: #fff !important;
+	margin-right: 24px !important;
+}
+
+.eagle-save-board-progress-bar .eagle-save-board-progress-bar-cancel {
+	margin-left: auto !important;
+	font-weight: 600 !important;
+	text-decoration: underline !important;
+	cursor: pointer !important;
+	color: #fff !important;
+}

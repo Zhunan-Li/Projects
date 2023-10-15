@@ -1,0 +1,8 @@
+name: HiraethPartyBridge
+version: ${project.version}
+main: isekai.kitsune.bungeedatabridgeSpigot.BungeeDataBridgeSpigot
+api-version: 1.16
+authors: [ Kitsune, LOOHP, SpringBreezeX ]
+commands:
+  pi:
+    description: ppi

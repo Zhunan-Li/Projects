@@ -1,0 +1,10 @@
+{
+  "Core": {
+    "Max_Thread_Count": 4,
+    "Console_Update_Interval": 0.5,
+    "Clipboard_Check_Interval": 0.5
+  },
+  "Pixiv": {
+    "Save_Location": "R:/"
+  }
+}

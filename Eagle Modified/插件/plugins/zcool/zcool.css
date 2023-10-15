@@ -1,0 +1,4 @@
+.Elastic_layer .layerBannar .bannarBox ul img, 
+.work-show-box img {
+    -webkit-user-drag: initial !important;
+}

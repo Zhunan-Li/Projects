@@ -1,0 +1,48 @@
+#body #homePage {
+  position: absolute;
+  top: 630px;
+  width: 100%;
+  z-index: 11;
+  overflow: hidden;
+}
+#body #homePage img {
+  margin-left: 15vw;
+  width: 40%;
+}
+#body #homePage div {
+  position: absolute;
+  top: 0;
+  right: 13vw;
+}
+#body #homePage div h1 {
+  color: black;
+  font-size: 4vw;
+  letter-spacing: -0.5vw;
+  text-align: center;
+  font-family: "Silkscreen", cursive;
+}
+#body #homePage div h1 br {
+  display: block;
+  content: "";
+  margin: -4vw;
+}
+#body #homePage div h1 span {
+  color: #ff641ad1;
+  margin-top: -1vw;
+  font-size: 9vw;
+}
+#body #homePage div h6 {
+  margin-top: 30px;
+  width: 30vw;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+}
+#body #homePage div h6 br {
+  display: block;
+  content: "";
+  margin: 5px;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,8 @@
+name: RPGCooking
+version: ${project.version}
+main: org.kitsune.com.RPGCooking
+api-version: 1.17
+authors: [Kitsune]
+softdepend: [CraftInHiraethCore, ProtocolLib, ProSkillAPI]
+commands:
+  recipeZukan:

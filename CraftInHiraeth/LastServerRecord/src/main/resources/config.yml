@@ -1,0 +1,3 @@
+DefaultServer: "lobby"
+BlackList:
+  - "lobby3"

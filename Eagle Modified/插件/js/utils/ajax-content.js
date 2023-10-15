@@ -1,0 +1,1 @@
+function ajax(a,n){chrome.runtime.sendMessage({action:"ajax",params:a},function(a){n(a)})}

@@ -1,0 +1,1 @@
+var RuntimeHelper={isAvailable:!0,init:function(){(chrome||browser).runtime.connect().onDisconnect.addListener(()=>{RuntimeHelper.isAvailable=!1})}};

@@ -1,0 +1,3 @@
+serverip: localhost
+servername: "lobby"
+port: 3000

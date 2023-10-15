@@ -1,0 +1,4 @@
+name: HiraethLastServerRecord
+version: ${project.version}
+main: isekai.kitsune.hiraeth.HiraethLastServerRecord
+author: Kitsune

@@ -1,0 +1,1 @@
+window.jQuery&&window.jQuery(document).ready(function(){var e=jQuery("input[type='checkbox']"),n=jQuery("#confirm_send_order");0===$("input[name='cvc']").length&&(e.length>0&&n.length>0?(e.attr("checked","checked"),n.click()):window.jQuery("body").addClass("show")),setTimeout(function(){window.jQuery("body").addClass("show")},3e3)});

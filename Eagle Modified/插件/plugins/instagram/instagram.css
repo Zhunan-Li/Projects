@@ -1,0 +1,15 @@
+article div div[role="button"] div:empty {
+    pointer-events: none !important;
+}
+
+article div div span[role="button"]:empty {
+    pointer-events: none !important;
+}
+
+article .videoSpritePlayButton {
+    pointer-events: none !important;
+}
+
+/* article div[role="button"], div.PyenC {
+    pointer-events: none !important;
+} */

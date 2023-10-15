@@ -1,0 +1,10 @@
+name: RPGFishing
+version: ${project.version}
+main: org.kitsune.com.RPGFishing
+api-version: 1.17
+softdepend: [WorldGuard, CraftInHiraethCore]
+authors: [Kitsune]
+description: Hiraeth
+commands:
+  rpgfishingitem:
+    permission: rpgfishing.admin

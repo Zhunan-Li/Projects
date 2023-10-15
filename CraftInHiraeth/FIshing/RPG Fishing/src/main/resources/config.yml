@@ -1,0 +1,9 @@
+Messages:
+  NoRewardMatch: "&c這個水域的漁獲資源已經枯竭了..."
+  CaughtFishTitle: "&a有魚上鉤了"
+  OutOfRange: "&c你距離浮標太遠了"
+  NoFishingRod: "&c你收桿了"
+  FishRushAway: "&c魚逃跑了"
+  getReward: "&e釣起來啦!"
+Settings:
+  HideEnchantments: false

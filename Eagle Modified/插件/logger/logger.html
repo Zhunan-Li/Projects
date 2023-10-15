@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Extension Logger</title>
+        <link rel="stylesheet" href="logger.css">
+        <link rel="stylesheet" href="../css/simplebar.min.css">
+    </head>
+
+    <body style="display: none;">
+        <div class="container">
+            <header>
+                <h1>
+                    <img src="../icons/icon.png" alt="" srcset="" width="22"> Extension Logger
+                </h1>
+                <button id="download">Download Logs</button>
+            </header>
+
+            <div id="board" class="board">
+                <div id="logs"></div>
+            </div>
+
+            <label style="font-weight: bold;">
+                <input type="checkbox" id="autoscroll" checked> AutoScroll
+            </label>
+        </div>
+
+        <script src="../js/utils/jquery.min.js"></script>
+        <script src="../js/utils/utils.js"></script>
+        <script src="../js/utils/date-format-helper.js"></script>
+        <script src="../js/utils/logline.js"></script>
+        <script src="../js/utils/logger.js"></script>
+        <script src="../js/utils/fflate.min.js"></script>
+        <script src="../js/utils/simplebar.min.js"></script>
+        <script src="logger.js"></script>
+    </body>
+
+</html>

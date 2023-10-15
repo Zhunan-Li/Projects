@@ -1,0 +1,551 @@
+body {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Heiti SC", "WenQuanYi Micro Hei", "PingFang TC", sans-serif;
+    overflow: hidden;
+}
+
+body.zh-cn, body.zh-tw, body.zh-cn .dropdown-menu, body.zh-tw .dropdown-menu {
+    width:  260px;
+}
+
+body.save-board {
+    height: 332px;
+}
+
+[show-save-board] {
+    display: none;
+}
+
+body.save-board [show-save-board] {
+    display: flex !important;
+}
+
+body.expand {
+    height: 672px;
+    width: 400px;
+    background: #F3F4F6;
+    overflow: auto;
+}
+
+body.ru .shortcuts-table .shortcut .name {
+    flex: 7;
+}
+
+body.zh-cn .shortcuts-table .shortcut .name,
+body.zh-tw .shortcuts-table .shortcut .name {
+    width: 90px;
+    flex: none;
+}
+
+body.zh-cn .shortcuts-table .shortcut .input,
+body.zh-tw .shortcuts-table .shortcut .input {
+    flex: 1;
+}
+
+.show-on-more {
+    display: none;
+}
+
+body.expand .show-on-more {
+    display: block;
+}
+
+body.expand .hide-on-more {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.message p {
+    font-size: 13px;
+    color: #50555b;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.message .button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: #0072ef;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.message .button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu .menu-item {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    background-color: #fff;
+    /*transition: all 20ms ease;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.dropdown-menu .menu-item:hover {
+    cursor: pointer;
+    background: #EEEEEE;
+}
+
+.dropdown-menu .menu-item .state-enable {
+    color: #1372FB;
+}
+
+.dropdown-menu .menu-item .state-disable {
+    color: #FF0016;
+}
+
+.dropdown-menu hr {
+    border: 0;
+    height: 1px;
+    margin: 5px 0;
+    background-color: #DEDEDE;
+}
+
+.dropdown-menu .menu-item .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .menu-item .shortcut {
+    margin-left: auto;
+    font-size: 13px;
+    color: #000;
+    font-family: 'Arial', 'Roboto Mono', 'Monaco', 'Consolas', monospace;
+}
+
+.dropdown-menu .menu-item .name {
+    font-size: 13px;
+    color: #000;
+    flex: 1;
+    white-space: nowrap;
+}
+
+div,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.clr {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    color: #3681b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #265c80;
+}
+
+a:active {
+    color: #000;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.update-notification {
+    z-index: 10;
+    bottom: 7px;
+    right: 9px;
+    position: absolute;
+    display: block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    background-color: #0072ef;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.update-notification:hover {
+    color: #fff;
+}
+
+.update-notification.show {
+    display: block;
+}
+
+.settings-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+}
+
+.settings-menu .settings-header {
+    user-select: none;
+    position: relative;
+    font-weight: 600;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #2c2f32;
+    border-bottom: 1px solid #DDD;
+    background: #fff;
+}
+
+.settings-menu .settings-header #back {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 0 8px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    border-radius: 5px;
+    color: #000;
+}
+
+.settings-menu .settings-header #back:hover {
+    background: #EEEEEE;
+}
+
+.settings-menu .settings-content {
+    padding: 20px;
+}
+
+.settings-menu .settings-content .section {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #50555b;
+}
+
+.settings-menu .settings-content .section .label {
+    user-select: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c2f32;
+    margin-bottom: 8px;
+}
+
+.settings-menu .settings-content .section p {
+    opacity: 0.7;
+    color: #50555b;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.settings-menu .settings-content .section p a {
+    color: #0072ef;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.settings-menu .settings-content .section .options {
+    overflow: hidden;
+}
+
+.settings-menu .settings-content .section .options .option {
+    float: left;
+    display: inline-block;
+    /*width: calc(33.33333% - 11px);*/
+    width: 110px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    /*opacity: 0.8;*/
+    transition: all 150ms ease-in-out;
+    user-select: none;
+}
+
+.settings-menu .settings-content .section .options .option:hover {
+    opacity: 1;
+}
+
+.settings-menu .settings-content .section .options .option .icon {
+    position: relative;
+    height: 60px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    overflow: hidden;
+    transition: all 150ms ease-in-out;
+}
+
+.settings-menu .settings-content .section .options .option .name {
+    font-size: 13px;
+    color: #50555b;
+    text-align: center;
+    opacity: 0.7;
+    transition: all 150ms ease-in-out;
+}
+
+.settings-menu .settings-content .section .options .option.active {
+    opacity: 1;
+}
+
+.settings-menu .settings-content .section .options .option.active .name {
+    color: #0072ef;
+    opacity: 1;
+}
+
+.settings-menu .settings-content .section .options .option.active .icon {
+    border: 1px solid #0072ef;
+}
+
+.settings-menu .settings-content .section .options .option .icon:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/option-selected.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+}
+
+.settings-menu .settings-content .section .options .option.active .icon:after {
+    opacity: 1;
+}
+
+.settings-menu .settings-content .section .btn {
+    user-select: none;
+    width: calc(100% - 10px);
+    font-size: 13px;
+    color: #50555b;
+    background: #FFFFFF;
+    border: 1px solid rgba(23, 43, 77, 0.30);
+    border-radius: 5px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.settings-menu .settings-content .section .btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.settings-menu .settings-content .section .options .option#drag-cursor .icon {
+    background-image: url(../images/option-cusor.svg);
+}
+
+.settings-menu .settings-content .section .options .option#drag-cursor.active .icon {
+    background-image: url(../images/option-cusor-active.svg);
+}
+
+.settings-menu .settings-content .section .options .option#drag-bottom .icon {
+    background-image: url(../images/option-bottom.svg);
+}
+
+.settings-menu .settings-content .section .options .option#drag-bottom.active .icon {
+    background-image: url(../images/option-bottom-active.svg);
+}
+
+.settings-menu .settings-content .section .options .option#drag-disable .icon {
+    background-image: url(../images/option-disable.svg);
+}
+
+.settings-menu .settings-content .section .options .option#drag-disable.active .icon {
+    background-image: url(../images/option-disable-active.svg);
+}
+
+.settings-menu .settings-content .section .options .option#format-jpeg .icon {
+    background-image: url(../images/option-jpeg.svg);
+}
+
+.settings-menu .settings-content .section .options .option#format-jpeg.active .icon {
+    background-image: url(../images/option-jpeg-active.svg);
+}
+
+.settings-menu .settings-content .section .options .option#format-png .icon {
+    background-image: url(../images/option-png.svg);
+}
+
+.settings-menu .settings-content .section .options .option#format-png.active .icon {
+    background-image: url(../images/option-png-active.svg);
+}
+
+.shortcuts-table {
+    padding-right: 10px;
+}
+
+.shortcuts-table .shortcut {
+    display: flex;
+    color: #50555b;
+    margin-bottom: 5px;
+}
+
+.shortcuts-table .shortcut .name {
+    flex: 5;
+    padding: 0px 4px;
+    line-height: 32px;
+    height: 32px;
+    font-size: 12px;
+}
+
+.shortcuts-table .shortcut .input {
+    flex: 4;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.shortcuts-table .shortcut .input input {
+    width: 100%;
+    border: none;
+    line-height: 32px;
+    height: 32px;
+    padding: 0px 8px;
+    font-size: 12px;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #50555b;
+}
+
+.shortcuts-table .shortcut .input input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 0 rgb(0, 110, 255);
+}
+
+.shortcuts-table .shortcut .input input::selection {
+    color: #fff;
+    background-color: rgb(0, 110, 255);
+}
+
+.button-cover,
+.knobs,
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: relative;
+    margin-left: auto;
+    width: 32px;
+    height: 16px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.button.r,
+.button.r .layer {
+    border-radius: 100px;
+}
+
+.button.b2 {
+    border-radius: 2px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #e1e2e4;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.button-styled .knobs:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    background-color: #aaabad;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+.button-styled .checkbox:active+.knobs:before {
+    width: 46px;
+    border-radius: 100px;
+}
+
+.button-styled .checkbox:checked:active+.knobs:before {
+    margin-left: -26px;
+}
+
+.button-styled .checkbox:checked+.knobs:before {
+    content: '';
+    left: 18px;
+    background-color: #F44336;
+}
+
+.button-styled .checkbox:checked~.layer {
+    background-color: #FCD9D6;
+}

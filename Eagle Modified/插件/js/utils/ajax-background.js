@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener(function(a,n,e){if("ajax"==a.action){let n=a.params;window.jQuery.ajax(n).always(function(a){e(a)})}return!0});

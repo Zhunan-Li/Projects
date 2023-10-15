@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="60px" viewBox="0 0 96 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>option-cusor-active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="option-cusor-active">
+            <rect id="Mask" fill="#FFFFFF" x="0" y="0" width="96" height="60" rx="5"></rect>
+            <g id="Group-2" transform="translate(34.000000, 16.000000)">
+                <rect id="Rectangle-2" fill="#006EFF" opacity="0.699999988" x="0" y="0" width="28" height="28" rx="5"></rect>
+                <g id="default" transform="translate(17.000000, 17.000000)" fill-rule="nonzero">
+                    <polygon id="Shape" fill="#FFFFFF" points="0 16.015 0 0 11.591 11.619 4.81 11.619 4.399 11.743"></polygon>
+                    <polygon id="Shape" fill="#FFFFFF" points="9.0845 16.6893 5.4795 18.2243 0.7975 7.1353 4.4835 5.5823"></polygon>
+                    <polygon id="Shape" fill="#000000" points="7.751 16.0086 5.907 16.7826 2.807 9.4086 4.648 8.6336"></polygon>
+                    <polygon id="Shape" fill="#000000" points="1 2.4071 1 13.5951 3.969 10.7291 4.397 10.5901 9.165 10.5901"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

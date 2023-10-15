@@ -1,0 +1,10 @@
+{
+  "Core": {
+    "Max_Thread_Count": 4,
+    "Console_Update_Interval": 0.3,
+    "Clipboard_Check_Interval": 0.1
+  },
+  "Pixiv": {
+    "Save_Location": "C:/Users/WAYNE/Downloads/自傳作品/Pixiv/圖片/"
+  }
+}

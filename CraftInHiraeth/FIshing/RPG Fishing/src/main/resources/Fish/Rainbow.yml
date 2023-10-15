@@ -1,0 +1,21 @@
+Name: "彩虹魚"
+Lore:
+  - "閃閃發光?"
+  - "看來可以賣不少錢呢"
+Difficult_min: 1
+Difficult_max: 3
+PullTimes_min: 4
+PullTimes_max: 5
+Xp_min: 10
+Xp_max: 50
+Chance_min: 1
+Chance_max: 3
+Level_min: 0
+Level_max: 100
+CustomModelData: 1
+CustomTag:
+  - "Rainbow:1"
+Material: "tropical_fish"
+Region: none
+Enchantments:
+  - "sharpness:1"

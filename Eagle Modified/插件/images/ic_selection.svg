@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_selection</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ic_selection" transform="translate(1.000000, 1.000000)" stroke="#172B4D" stroke-width="1.5">
+            <path d="M4.03188854,0 L3.94736842,9.75232198 C3.94736842,10.4704631 4.52953686,11.0526316 5.24767802,11.0526316 L15,11.0526316" id="Shape"></path>
+            <path d="M0,4.03188854 L9.75232198,3.94736842 C10.4704631,3.94736842 11.0526316,4.52953686 11.0526316,5.24767802 L11.0526316,15" id="Shape"></path>
+        </g>
+    </g>
+</svg>

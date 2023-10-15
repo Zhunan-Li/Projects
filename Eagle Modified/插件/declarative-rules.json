@@ -1,0 +1,41 @@
+[
+{
+    "id": 1,
+    "priority": 1,
+    "action":
+    {
+        "type": "redirect",
+        "redirect":
+        {
+            "transform":
+            {
+                "scheme": "http"
+            }
+        }
+    },
+    "condition":
+    {
+        "urlFilter": "https://localhost:41593",
+        "resourceTypes": ["xmlhttprequest"]
+    }
+},
+{
+    "id": 2,
+    "priority": 1,
+    "action":
+    {
+        "type": "redirect",
+        "redirect":
+        {
+            "transform":
+            {
+                "scheme": "http"
+            }
+        }
+    },
+    "condition":
+    {
+        "urlFilter": "https://localhost:41595",
+        "resourceTypes": ["xmlhttprequest"]
+    }
+}]

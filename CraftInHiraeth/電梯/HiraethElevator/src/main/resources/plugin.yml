@@ -1,0 +1,5 @@
+name: HiraethElevator
+version: ${project.version}
+main: org.kitsune.com.HiraethElevator
+api-version: 1.16
+authors: [Kitsune]

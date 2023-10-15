@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Eagle Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body class="has-url">
+    <div id="not-open-app" class="message hide">
+        <p>Please open Eagle app first.</p>
+    </div>
+    <div id="settings-menu" class="settings-menu hide show-on-more">
+        <div class="settings-header">
+            <div id="back">返回</div>
+            <div class="title">偏好设置</div>
+        </div>
+        <div class="settings-content">
+            <div id="drag-feature" class="section">
+                <div class="label">拖拽保存</div>
+                <div class="options">
+                    <div id="drag-cursor" class="option drag-feature active">
+                        <div class="icon"></div>
+                        <div class="name">鼠标方向</div>
+                    </div>
+                    <div id="drag-bottom" class="option drag-feature">
+                        <div class="icon"></div>
+                        <div class="name">窗口底部</div>
+                    </div>
+                    <div id="drag-disable" class="option drag-feature">
+                        <div class="icon"></div>
+                        <div class="name">关闭</div>
+                    </div>
+                </div>
+            </div>
+            <div id="format-feature" class="section">
+                <div class="label">截图格式</div>
+                <div class="options">
+                    <div id="format-png" class="option format-feature">
+                        <div class="icon"></div>
+                        <div class="name">PNG</div>
+                    </div>
+                    <div id="format-jpeg" class="option format-feature active">
+                        <div class="icon"></div>
+                        <div class="name">JPEG</div>
+                    </div>
+                </div>
+            </div>
+            <div id="collect-feature" class="section">
+                <div class="label">收藏设置</div>
+                <input id="collect-support" type="checkbox" name="collect-support">
+                <label for="collect-support">保存图片时，显示编辑窗口进行分类</label>
+            </div>
+            <div class="section">
+                <div id="retina-feature">
+                    <div class="label">截图设置</div>
+                    <input id="retina-support" type="checkbox" name="retina-support">
+                    <label for="retina-support">使用 Retina 画质进行截图（较占用容量）</label>
+                </div>
+                <div style="margin-top: 5px;">
+                    <input id="capture-delay-checkbox" type="checkbox" name="capture-delay-checkbox">
+                    <label for="capture-delay-checkbox"><span id="capture-delay-label">滚动截图延迟</span><div style="display: inline-block; margin: 0 4px;" class="input"><input id="capture-delay" class="shortcut-input" type="number" step="0.1" min="0.5" max="5" style="width: 44px;"></div><span id="capture-delay-sec">秒</span></label>
+                </div>
+            </div>
+            <div id="shortcuts-feature" class="section">
+                <div class="label">快捷键设置</div>
+                <div class="shortcuts-table">
+                    <div class="shortcut">
+                        <div class="name url">將網址保存至 Eagle</div>
+                        <div class="input"><input id="url-save-shortcut" class="shortcut-input" type="text" placeholder="输入快捷键"></div>
+                    </div>
+                    <div class="shortcut">
+                        <div class="name batch">批量收藏</div>
+                        <div class="input"><input id="batch-save-shortcut" class="shortcut-input" type="text" placeholder="输入快捷键"></div>
+                    </div>
+                    <div class="shortcut">
+                        <div class="name selected">选择区域截图</div>
+                        <div class="input"><input id="capture-area-shortcut" class="shortcut-input" type="text" placeholder="输入快捷键"></div>
+                    </div>
+                    <div class="shortcut">
+                        <div class="name visible">可视区域截图</div>
+                        <div class="input"><input id="capture-visible-shortcut" class="shortcut-input" type="text" placeholder="输入快捷键"></div>
+                    </div>
+                    <div class="shortcut">
+                        <div class="name entire">整张网页截图</div>
+                        <div class="input"><input id="capture-entire-shortcut" class="shortcut-input" type="text" placeholder="输入快捷键"></div>
+                    </div>
+                </div>
+                <div style="padding-top: 16px; padding-bottom: 4px; border-top: 1px solid #ddd;">
+                    <button id="download-log" href="#" style="font-size: 13px; ">Download Debug Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dropdown-menu" class="dropdown-menu hide-on-more">
+        <div id="save-board" class="save-board menu-item hide-on-more" show-save-board>
+            <div class="icon">
+                <img src="images/ic_board.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <img src="images/ic_new.svg"/>
+        </div>
+        <div id="save-url" class="save-url-btn menu-item hide-on-more">
+            <div class="icon">
+                <img src="images/ic_bookmark.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="shortcut"></div>
+        </div>
+        <div id="save-images" class="menu-item hide-on-more">
+            <div class="icon">
+                <img src="images/ic_batch.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="shortcut"></div>
+        </div>
+        <hr>
+        <div id="capture-selected" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_capture_crop.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="shortcut"></div>
+        </div>
+        <div id="capture-visible" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_capture_visible.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="shortcut"></div>
+        </div>
+        <div id="capture-entire" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_capture_page.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="shortcut"></div>
+        </div>
+        <hr>
+        <div id="disable-drag-url" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_drag.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="button r button-styled">
+                <input type="checkbox" class="checkbox">
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+            <div class="shortcut"></div>
+        </div>
+        <div id="disable-drag-domain" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_drag.svg" alt="">
+            </div>
+            <div class="name"></div>
+            <div class="button r button-styled">
+                <input type="checkbox" class="checkbox">
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+        </div>
+        <hr>
+        <div id="preferences" class="menu-item">
+            <div class="icon">
+                <img src="images/ic_preference.svg" alt="">
+            </div>
+            <div class="name"></div>
+        </div>
+        <input id="shortcut-input" type="text" autofocus="" style="position: absolute; top: 0; opacity: 0; height: 0;">
+    </div>
+    <script src="../js/utils/jquery.min.js"></script>
+    <script src="../js/utils/utils.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

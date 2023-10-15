@@ -1,0 +1,20 @@
+Name: "PUIPUI"
+Lore:
+  - "&aPUIPUIPUI"
+  - "&b奇怪的魚..."
+Difficult_min: 3
+Difficult_max: 10
+PullTimes_min: 1
+PullTimes_max: 3
+Xp_min: 0
+Xp_max: 5
+Chance_min: 5
+Chance_max: 5
+Level_min: 0
+Level_max: 100
+CustomModelData: 1
+CustomTag:
+  - "PUIPUI:1"
+Material: "pufferfish"
+Region: none
+Enchantments: none

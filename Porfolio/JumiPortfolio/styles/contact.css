@@ -1,0 +1,28 @@
+#contactPage {
+  position: absolute;
+  top: 630px;
+  z-index: 11;
+  width: 100%;
+  background-color: white;
+}
+#contactPage img {
+  width: 40%;
+  margin-left: 20%;
+}
+#contactPage h1 {
+  position: absolute;
+  top: 7vw;
+  left: 50vw;
+  font-family: "Inter", sans-serif;
+  color: #5C4F6E;
+  font-size: 1.5vw;
+}
+#contactPage h1 span {
+  margin-left: -8px;
+  font-family: "Silkscreen", cursive;
+  color: #3C2D52;
+  font-size: 4vw;
+  letter-spacing: -0.6vw;
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="60px" viewBox="0 0 96 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>option-bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="option-bottom">
+            <rect id="Mask" fill="#FFFFFF" x="0" y="0" width="96" height="60" rx="5"></rect>
+            <rect id="Rectangle-2" fill="#172B4D" opacity="0.300000012" x="0" y="40" width="96" height="20"></rect>
+            <rect id="Rectangle-5" fill="#FFFFFF" opacity="0.5" x="32" y="49" width="32" height="3" rx="1.5"></rect>
+        </g>
+    </g>
+</svg>

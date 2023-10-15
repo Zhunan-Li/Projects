@@ -1,0 +1,58 @@
+Messages:
+  TimeLeft: "&f뾦&r "
+  FireFirst: "&c請先點火"
+  AlreadyFire: "&c你已經使用了其他火爐"
+  LevelNotEnough: "&c等級不足"
+  InventoryIsFull: "&8[&c&l!&8]&7 你背包滿了! 沒有空間裝食物!"
+  UnlockNewRecipe: "&b你發現了新食譜!&r {recipeName}"
+StructMaterial:
+  Top: BARRIER
+  Base: SOUL_CAMPFIRE
+Fuel_Settings:
+  CustomModelData: 13
+  Material: PINK_DYE
+  Time: 15
+HologramSettings:
+  TopLineHigh: 1.6
+  SecondLineHigh: 1.3
+  ThirdLineHigh: 1
+  TutorialMessage1: "뿸 放入 | 륜 確認"
+  TutorialMessage2: "뿰+뿸 回收食材"
+  TimeMessage: "뾦: {time}"
+EffectName:
+  Heal: "&a補血: "
+  Strength: "&4力量: "
+  Speed: "&f速度: "
+  Mana: "&b體力: "
+  Time: "秒"
+DefaultItem:
+  UnknownRecipe:
+    Name: "&c雜食"
+    ID: 0
+    Material: "BREAD"
+    CountUse: 1
+    CustomModelData: 1
+    Lore:
+      - ""
+      - "&f黑暗料理"
+      - ""
+    Exp: 10
+    Money: 10
+    Tier: "D"
+    RequireMaterials:
+      - "NONE"
+    Multiplier: 1
+MySQL:
+  Host: "HOST IP"
+  Port: 3306
+  DataBase: "DATABASE"
+  UserName: "USER NAME"
+  Password: "PASSWORD"
+TierExp:
+  E: 15
+  D: 30
+  C: 100
+  B: 300
+  A: 900
+  S: 2700
+  SS: 6400

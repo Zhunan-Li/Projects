@@ -1,0 +1,41 @@
+[
+{
+    "id": 2,
+    "priority": 1,
+    "action":
+    {
+        "type": "modifyHeaders",
+        "requestHeaders": [
+        {
+            "header": "Referer",
+            "operation": "set",
+            "value": "https://www.pixiv.net/"
+        }]
+    },
+    "condition":
+    {
+        "urlFilter": ".pximg.net",
+        "excludedDomains": ["pixiv.net"],
+        "resourceTypes": ["xmlhttprequest"]
+    }
+},
+{
+    "id": 3,
+    "priority": 1,
+    "action":
+    {
+        "type": "modifyHeaders",
+        "requestHeaders": [
+        {
+            "header": "Referer",
+            "operation": "set",
+            "value": "https://www.bigbigwork.com/"
+        }]
+    },
+    "condition":
+    {
+        "urlFilter": ".bigurl.ink",
+        "excludedDomains": ["bigbigwork.com"],
+        "resourceTypes": ["xmlhttprequest"]
+    }
+}]

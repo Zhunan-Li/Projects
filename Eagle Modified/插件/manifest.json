@@ -1,0 +1,99 @@
+{
+   "background": {
+      "scripts": [ "js/utils/jquery.min.js", "js/utils/logline.js", "js/utils/logger.js", "js/sieve.js", "js/background.js", "js/utils/ajax-background.js", "js/api.js", "js/utils/cache-helper.js", "js/utils/url-helper.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_popup": "popup/popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "css/eagle-extension.css", "css/saveBoard.css" ],
+      "exclude_matches": [ "https://wuxian.taobao.com/decorate/*", "http://wuxian.taobao.com/decorate/*", "https://paper.dropbox.com/*", "*://*/*chrome.google.com/webstore*" ],
+      "js": [ "js/utils/jquery.min.js", "js/utils/jquery-ui.min.js", "js/utils/logline.js", "js/utils/element-helper.js", "js/utils/logger.js", "js/utils/mousetrap.min.js", "js/utils/extract-text.js", "js/utils/utils.js", "js/utils/url-helper.js", "js/utils/runtime-helper.js", "js/sieve.js", "js/utils/ajax-content.js", "js/content.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*", "file:///*/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "css": [ "css/eagle-extension.css" ],
+      "js": [ "js/utils/jquery.min.js", "js/utils/jquery-ui.min.js", "js/utils/mousetrap.min.js", "js/utils/extract-text.js", "js/utils/utils.js", "js/sieve.js", "js/utils/url-helper.js", "js/utils/runtime-helper.js", "js/content.js" ],
+      "matches": [ "https://music.163.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "plugins/alipay/alipay.css" ],
+      "js": [ "js/utils/jquery.min.js", "plugins/alipay/alipay.js" ],
+      "matches": [ "https://core.spgateway.com/MPG/mpg_gateway" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/alipay/alipay.css" ],
+      "matches": [ "https://core.spgateway.com/API/Alipay", "https://core.spgateway.com/MPG/mpg_gateway/payment_info_submit" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/ezpay/ezpay.css" ],
+      "js": [ "js/utils/jquery.min.js", "plugins/ezpay/ezpay.js" ],
+      "matches": [ "https://payment.ezpay.com.tw/MPG/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/zcool/zcool.css" ],
+      "matches": [ "https://www.zcool.com.cn/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/instagram/instagram.css" ],
+      "js": [ "plugins/instagram/instagram.js" ],
+      "matches": [ "https://www.instagram.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "js/utils/jquery.min.js", "plugins/pinterest/pinterest.js" ],
+      "matches": [ "https://*.pinterest.com/*", "https://*.pinterest.com.au/*", "https://*.pinterest.jp/*", "https://*.pinterest.de/*", "https://*.pinterest.dk/*", "https://*.pinterest.se/*", "https://*.pinterest.pt/*", "https://*.pinterest.es/*", "https://*.pinterest.cl/*", "https://*.pinterest.fr/*", "https://*.pinterest.nz/*", "https://*.pinterest.co.kr/*", "https://*.pinterest.co.uk/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/behance/behance.css" ],
+      "matches": [ "https://*.behance.net/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/weibo/weibo.css" ],
+      "matches": [ "https://weibo.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/dribbble/dribbble.css" ],
+      "matches": [ "https://dribbble.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "plugins/500px/500px.js" ],
+      "matches": [ "https://500px.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/archdaily/archdaily.css" ],
+      "matches": [ "https://www.archdaily.cn/*", "https://www.archdaily.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "plugins/appstore/appstore.css" ],
+      "matches": [ "https://apps.apple.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_referer",
+         "path": "referer-rules.json"
+      }, {
+         "enabled": false,
+         "id": "localhost_hsts_redirect",
+         "path": "declarative-rules.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "\u003Call_urls>", "activeTab", "contextMenus", "storage", "tabs", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.7.2"
+}

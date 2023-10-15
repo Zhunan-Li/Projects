@@ -1,0 +1,5 @@
+name: HiraethTabListManager
+version: ${project.version}
+main: org.kitsune.com.HiraethTabListManager
+author: Kitsune
+softDepends: ['BungeeTabListPlus', 'PartyAndFriends']

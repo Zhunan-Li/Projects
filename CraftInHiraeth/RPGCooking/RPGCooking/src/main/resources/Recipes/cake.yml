@@ -1,0 +1,17 @@
+Name: "&a蛋糕"
+ID: 1
+Material: "CAKE"
+CountUse: 1
+CustomModelData: 1
+Lore:
+  - ""
+  - "&e⚔&7 攻擊距離: &e中   &8(3格)"
+  - ""
+Exp: 10
+Money: 10
+Tier: "A"
+RequireMaterials:
+  - "Apple"
+  - "Sugar"
+  - "Apple"
+Multiplier: 2
