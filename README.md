@@ -2,7 +2,7 @@
 
 | 作品名稱 | 語言 | 連結 |
 | ------ | ------ | ------ |
-| SQL 查詢與匯出工具 | Vue、NodeJS | https://github.com/Zhunan-Li/Projects/tree/main/SQL%20%E6%9F%A5%E8%A9%A2%E8%88%87%E5%8C%AF%E5%87%BA%E5%B7%A5%E5%85%B7 |
+| 資料庫多資料表查詢、篩選、匯出工具 | Vue、NodeJS | https://github.com/Zhunan-Li/Projects/tree/main/SQL%20%E6%9F%A5%E8%A9%A2%E8%88%87%E5%8C%AF%E5%87%BA%E5%B7%A5%E5%85%B7 |
 | Eagle瀏覽器插件修改 | JavaScript | https://github.com/Zhunan-Li/Projects/tree/main/Eagle%20Modified |
 | Minecraft Server核心修改 | Java | https://github.com/Zhunan-Li/Projects/tree/main/Minecraft%20Server |
 | Pixiv下載器 | Python | https://github.com/Zhunan-Li/Projects/tree/main/Pixiv |
